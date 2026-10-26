@@ -1,318 +1,299 @@
 <!DOCTYPE html>
 <html lang="ro">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ferma bio „Livada Verde”</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-    <!-- 1. Bara de sus -->
-    <div class="top-bar">
-        <span>📞 067 118 902 · ✉ comenzi@livadaverde.md</span>
-        <span>Livrare: marți și vineri</span>
-    </div>
-
-    <!-- 2. Header (sticky) -->
-    <header class="site-header">
-        <div class="logo">🌿 LivadaVerde</div>
-        <nav class="main-nav">
-            <a href="#acasa">Acasă</a>
-            <a href="#produse">Produse</a>
-            <a href="#cosuri">Coșuri</a>
-            <a href="#ferma">Ferma</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <a href="#cosuri" class="btn-primary">Comandă un coș</a>
-    </header>
-
-    <main>
-        <!-- 3. Hero -->
-        <section id="acasa" class="hero-section">
-            <div class="hero-content">
-                <span class="badge">Certificat ecologic din 2017</span>
-                <h1>Legume și fructe 🐝 Miere proprie de salcâm și tei crescute fără chimicale</h1>
-                <p>Ferma noastră din Sîngerei cultivă legume, fructe și verdețuri doar cu îngrășăminte naturale. Le culegem dimineața și le livrăm în Bălți.</p>
-                <div class="hero-buttons">
-                    <a href="#produse" class="btn-solid">Vezi produsele</a>
-                    <a href="#ferma" class="btn-outline">Vizitează ferma</a>
-                </div>
-            </div>
-            <!-- Element absolute peste imagine / hero -->
-            <div class="hero-absolute-card">
-                <span>Cules azi</span>
-                <strong>🥕 livrat mâine dimineață</strong>
-            </div>
-        </section>
-
-        <!-- Statistici sub hero (parte din design) -->
-        <section class="stats-section">
-            <div class="stat-item"><strong>14 ha</strong> de livezi și sere</div>
-            <div class="stat-item"><strong>60+</strong> produse de sezon</div>
-            <div class="stat-item"><strong>900</strong> familii abonate</div>
-        </section>
-
-        <!-- 4. Avantaje -->
-        <section class="advantages-section">
-            <h2>DE CE LIVADA VERDE</h2>
-            <p class="section-subtitle">De la noi din grădină, la masa ta 🛒</p>
-            <div class="advantages-grid">
-                <div class="advantage-card">
-                    <span class="icon">🌱</span>
-                    <h3>Fără pesticide</h3>
-                    <p>Lucrăm pământul ca bunicii, dar cu grijă de mediu.</p>
-                </div>
-                <div class="advantage-card">
-                    <span class="icon">🚜</span>
-                    <h3>Cules la comandă</h3>
-                    <p>Nu ținem marfa în depozit. Cules natural.</p>
-                </div>
-                <div class="advantage-card">
-                    <span class="icon">♻</span>
-                    <h3>Ambalaje reutilizabile</h3>
-                    <p>Lăzi de lemn și pungi de pânză.</p>
-                </div>
-                <div class="advantage-card">
-                    <span class="icon">👨‍🌾</span>
-                    <h3>Vizite la fermă</h3>
-                    <p>Vino sâmbăta să culegi singur.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 5. Produse / servicii (carduri) -->
-        <section id="produse" class="products-section">
-            <h2>PRODUSE</h2>
-            <p class="section-subtitle">Proaspete săptămâna aceasta. Prețurile se schimbă după sezon și recoltă.</p>
-            
-            <div class="products-grid">
-                <!-- Produs 1 -->
-                <div class="product-card">
-                    <span class="product-badge top">TOP</span>
-                    <button class="wishlist-btn">♡</button>
-                    <img src="img/produs1.jpg" alt="Roșii de grădină">
-                    <h3>Roșii de grădină</h3>
-                    <p class="product-info">1 kg · soi românesc</p>
-                    <div class="product-footer">
-                        <span class="price">45 lei</span>
-                        <button class="add-btn">+</button>
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <meta content="Legume, fructe și produse de fermă proaspete, livrate în Bălți de LivadaVerde." name="description"/>
+        <title>LivadaVerde — gust proaspăt din grădină</title>
+        <link href="css/style.css" rel="stylesheet"/>
+    </head>
+    <body id="acasa">
+        <div class="top-bar">
+            <span>📞 067 118 902 · ✉ comenzi@livadaverde.md</span>
+            <span>Livrare: marți și vineri</span>
+        </div>
+        <header class="site-header">
+            <a class="logo" href="#acasa">
+                🌿
+                <span>LivadaVerde</span>
+            </a>
+            <nav aria-label="Navigare principală" class="main-nav">
+                <a class="active" href="#acasa">Acasă</a>
+                <a href="#produse">Produse</a>
+                <a href="#cosuri">Coșuri</a>
+                <a href="#ferma">Ferma</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <a class="btn-primary" href="#cosuri">Comandă un coș</a>
+        </header>
+        <main>
+            <section class="hero-section">
+                <div class="hero-content">
+                    <span class="badge">Certificat ecologic din 2017</span>
+                    <h1>
+                        Legume și fructe crescute
+                        <em>fără chimicale</em>
+                    </h1>
+                    <p>Ferma noastră din Sîngerei cultivă legume, fructe și verdețuri doar cu îngrășăminte naturale. Le culegem dimineața și le livrăm în Bălți.</p>
+                    <div class="hero-buttons">
+                        <a class="btn-solid" href="#produse">Vezi produsele</a>
+                        <a class="btn-outline" href="#ferma">Vizitează ferma</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div>
+                            <strong>14 ha</strong>
+                            <span>de livezi și sere</span>
+                        </div>
+                        <div>
+                            <strong>60+</strong>
+                            <span>produse de sezon</span>
+                        </div>
+                        <div>
+                            <strong>900</strong>
+                            <span>familii abonate</span>
+                        </div>
                     </div>
                 </div>
-
-                <!-- Produs 2 -->
-                <div class="product-card">
-                    <button class="wishlist-btn">♡</button>
-                    <img src="img/produs2.jpg" alt="Castraveți">
-                    <h3>Castraveți</h3>
-                    <p class="product-info">1 kg · din seră</p>
-                    <div class="product-footer">
-                        <span class="price">30 lei</span>
-                        <button class="add-btn">+</button>
+                <div class="hero-photo-wrap">
+                    <img alt="Grădina verde și culturile proaspete ale fermei LivadaVerde" class="hero-photo" src="img/hero-reference.jpg"/>
+                    <div class="hero-note honey-note">
+                        <span class="note-icon">🐝</span>
+                        <span><strong>Miere proprie</strong><small>de salcâm și tei</small></span>
+                    </div>
+                    <div class="hero-note harvest-note">
+                        <span class="note-icon">🥕</span>
+                        <span><strong>Cules azi</strong><small>livrat mâine dimineață</small></span>
                     </div>
                 </div>
-
-                <!-- Produs 3 -->
-                <div class="product-card">
-                    <button class="wishlist-btn">♡</button>
-                    <img src="img/produs3.jpg" alt="Mere Golden">
-                    <h3>Mere Golden</h3>
-                    <p class="product-info">2 kg · din livadă</p>
-                    <div class="product-footer">
-                        <span class="price">40 lei</span>
-                        <button class="add-btn">+</button>
-                    </div>
+            </section>
+            <section class="advantages-section section-pad">
+                <p class="eyebrow">DE CE LIVADA VERDE</p>
+                <h2>De la noi din grădină, la masa ta</h2>
+                <p class="section-subtitle">Lucrăm pământul ca bunicii, dar cu grijă de mediu.</p>
+                <div class="advantages-grid">
+                    <article class="advantage-card">
+                        <span class="icon">🌱</span>
+                        <h3>Fără pesticide</h3>
+                        <p>Combatem dăunătorii natural.</p>
+                    </article>
+                    <article class="advantage-card">
+                        <span class="icon">🚜</span>
+                        <h3>Cules la comandă</h3>
+                        <p>Nu ținem marfa în depozit.</p>
+                    </article>
+                    <article class="advantage-card">
+                        <span class="icon">♻️</span>
+                        <h3>Ambalaje reutilizabile</h3>
+                        <p>Lăzi de lemn și pungi de pânză.</p>
+                    </article>
+                    <article class="advantage-card">
+                        <span class="icon">🧑‍🌾</span>
+                        <h3>Vizite la fermă</h3>
+                        <p>Vino sâmbăta să culegi singur.</p>
+                    </article>
                 </div>
-
-                <!-- Produs 4 -->
-                <div class="product-card">
-                    <button class="wishlist-btn">♡</button>
-                    <img src="img/produs4.jpg" alt="Miere de salcâm">
-                    <h3>Miere de salcâm</h3>
-                    <p class="product-info">borcan de 500 g</p>
-                    <div class="product-footer">
-                        <span class="price">120 lei</span>
-                        <button class="add-btn">+</button>
-                    </div>
+            </section>
+            <section class="products-section section-pad" id="produse">
+                <p class="eyebrow">PRODUSE</p>
+                <h2>Proaspete săptămâna aceasta</h2>
+                <p class="section-subtitle">Prețurile se schimbă după sezon și recoltă.</p>
+                <div class="products-grid">
+                    <article class="product-card">
+                        <span class="product-badge">TOP</span>
+                        <span aria-hidden="true" class="wishlist-btn">♡</span>
+                        <img alt="Roșii de grădină proaspete" src="img/produs1.jpg"/>
+                        <h3>Roșii de grădină</h3>
+                        <p class="product-info">1 kg · soi românesc</p>
+                        <div class="product-footer">
+                            <strong class="price">45 lei</strong>
+                            <a aria-label="Întreabă despre roșii" class="add-btn" href="#contact">+</a>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <img alt="Castraveți proaspeți" src="img/produs2.jpg"/>
+                        <h3>Castraveți</h3>
+                        <p class="product-info">1 kg · din seră</p>
+                        <div class="product-footer">
+                            <strong class="price">30 lei</strong>
+                            <a aria-label="Întreabă despre castraveți" class="add-btn" href="#contact">+</a>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <img alt="Mere Golden din livadă" src="img/produs3.jpg"/>
+                        <h3>Mere Golden</h3>
+                        <p class="product-info">2 kg · din livadă</p>
+                        <div class="product-footer">
+                            <strong class="price">40 lei</strong>
+                            <a aria-label="Întreabă despre mere" class="add-btn" href="#contact">+</a>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <span class="product-badge">NOU</span>
+                        <span aria-hidden="true" class="wishlist-btn">♡</span>
+                        <img alt="Miere de salcâm în borcan" src="img/produs4.jpg"/>
+                        <h3>Miere de salcâm</h3>
+                        <p class="product-info">borcan de 500 g</p>
+                        <div class="product-footer">
+                            <strong class="price">120 lei</strong>
+                            <a aria-label="Întreabă despre miere" class="add-btn" href="#contact">+</a>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <img alt="Ouă de țară" src="img/produs5.jpg"/>
+                        <h3>Ouă de țară</h3>
+                        <p class="product-info">10 buc. · găini libere</p>
+                        <div class="product-footer">
+                            <strong class="price">35 lei</strong>
+                            <a aria-label="Întreabă despre ouă" class="add-btn" href="#contact">+</a>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <span class="product-badge sale">-20%</span>
+                        <span aria-hidden="true" class="wishlist-btn">♡</span>
+                        <img alt="Brânză de vaci de casă" src="img/produs6.jpg"/>
+                        <h3>Brânză de vaci</h3>
+                        <p class="product-info">500 g · de casă</p>
+                        <div class="product-footer">
+                            <strong class="price">
+                                65 lei
+                                <del>80 lei</del>
+                            </strong>
+                            <a aria-label="Întreabă despre brânză" class="add-btn" href="#contact">+</a>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <img alt="Cartofi noi" src="img/produs7.jpg"/>
+                        <h3>Cartofi noi</h3>
+                        <p class="product-info">3 kg · recolta 2026</p>
+                        <div class="product-footer">
+                            <strong class="price">36 lei</strong>
+                            <a aria-label="Întreabă despre cartofi" class="add-btn" href="#contact">+</a>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <img alt="Verdețuri proaspete" src="img/produs8.jpg"/>
+                        <h3>Verdețuri</h3>
+                        <p class="product-info">mărar, pătrunjel</p>
+                        <div class="product-footer">
+                            <strong class="price">15 lei</strong>
+                            <a aria-label="Întreabă despre verdețuri" class="add-btn" href="#contact">+</a>
+                        </div>
+                    </article>
                 </div>
-
-                <!-- Produs 5 -->
-                <div class="product-card">
-                    <span class="product-badge sale">-20%</span>
-                    <button class="wishlist-btn">♡</button>
-                    <img src="img/produs5.jpg" alt="Ouă de țară">
-                    <h3>Ouă de țară</h3>
-                    <p class="product-info">10 buc. · găini libere</p>
-                    <div class="product-footer">
-                        <span class="price">35 lei</span>
-                        <button class="add-btn">+</button>
-                    </div>
-                </div>
-
-                <!-- Produs 6 -->
-                <div class="product-card">
-                    <button class="wishlist-btn">♡</button>
-                    <img src="img/produs6.jpg" alt="Brânză de vaci">
-                    <h3>Brânză de vaci</h3>
-                    <p class="product-info">500 g · de casă</p>
-                    <div class="product-footer">
-                        <span class="price">65 lei</span>
-                        <button class="add-btn">+</button>
-                    </div>
-                </div>
-
-                <!-- Produs 7 -->
-                <div class="product-card">
-                    <button class="wishlist-btn">♡</button>
-                    <img src="img/produs7.jpg" alt="Cartofi noi">
-                    <h3>Cartofi noi</h3>
-                    <p class="product-info">3 kg · recolta 2026</p>
-                    <div class="product-footer">
-                        <span class="price">80 lei</span>
-                        <button class="add-btn">+</button>
-                    </div>
-                </div>
-
-                <!-- Produs 8 -->
-                <div class="product-card">
-                    <button class="wishlist-btn">♡</button>
-                    <img src="img/produs8.jpg" alt="Verdețuri">
-                    <h3>Verdețuri</h3>
-                    <p class="product-info">mărar, pătrunjel</p>
-                    <div class="product-footer">
-                        <span class="price">36 lei</span>
-                        <button class="add-btn">+</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 6. Recenzii -->
-        <section class="reviews-section">
-            <h2>CLIENȚI</h2>
-            <p class="section-subtitle">Ce spun familiile abonate</p>
-            <div class="review-card">
-                <button class="arrow left">&lsaquo;</button>
-                <blockquote>
-                    “Roșiile lor au gust ca cele din copilărie. Primim coșul în fiecare vineri, iar copiii abia așteaptă să vadă ce fructe au venit de data asta.”
-                </blockquote>
+            </section>
+            <section class="reviews-section section-pad">
+                <p class="eyebrow">CLIENȚI</p>
+                <h2>Ce spun familiile abonate</h2>
+                <div class="quote-mark">“</div>
+                <blockquote>Roșiile lor au gust ca cele din copilărie. Primim coșul în fiecare vineri, iar copiii abia așteaptă să vadă ce fructe au venit de data asta.</blockquote>
                 <div class="reviewer">
-                    <div class="avatar">EC</div>
-                    <div>
+                    <span class="avatar">EC</span>
+                    <span>
                         <strong>Elena Croitoru</strong>
-                        <span>abonată din 2021</span>
+                        <small>abonată din 2021</small>
+                    </span>
+                </div>
+                <div aria-hidden="true" class="review-dots">
+                    <span></span>
+                </div>
+            </section>
+            <section class="gallery-section section-pad" id="ferma">
+                <p class="eyebrow">FERMA</p>
+                <h2>O zi la Livada Verde</h2>
+                <div class="gallery-grid">
+                    <img alt="Pomii din livadă într-o zi senină" class="gallery-tall" src="img/ferma-tree.jpg"/>
+                    <div class="gallery-stack">
+                        <img alt="Interiorul serei fermei" src="img/ferma-sera.jpg"/>
+                        <img alt="Stupi în livadă și grădină" src="img/ferma-stupi.jpg"/>
                     </div>
+                    <img alt="Îngrijirea culturilor verzi la fermă" class="gallery-tall" src="img/ferma-culturi.jpg"/>
                 </div>
-                <button class="arrow right">&rsaquo;</button>
-            </div>
-        </section>
-
-        <!-- 7. Galerie -->
-        <section id="ferma" class="gallery-section">
-            <h2>FERMA</h2>
-            <p class="section-subtitle">O zi la Livada Verde</p>
-            <div class="gallery-grid">
-                <img src="img/ferma1.jpg" alt="Ferma 1" class="grid-span-2">
-                <img src="img/ferma2.jpg" alt="Ferma 2">
-                <img src="img/ferma3.jpg" alt="Ferma 3">
-            </div>
-        </section>
-
-        <!-- 8. Ofertă (Coșuri) -->
-        <section id="cosuri" class="offer-section">
-            <h2>COȘURI</h2>
-            <p class="section-subtitle">Coșul săptămânal de legume. Alegi mărimea, noi punem ce e mai bun în sezon. Poți pune pe pauză oricând.</p>
-            
-            <div class="pricing-grid">
-                <!-- Pachet Mic -->
-                <div class="price-card">
-                    <h3>Mic</h3>
-                    <div class="price-value">290 lei <span>/ săpt.</span></div>
-                    <ul class="features-list">
-                        <li>✓ 5 kg de legume</li>
-                        <li>✓ Verdețuri incluse</li>
-                        <li>✓ Pentru 1–2 persoane</li>
-                    </ul>
-                    <a href="#" class="btn-solid">Comandă</a>
+            </section>
+            <section class="offer-section section-pad" id="cosuri">
+                <p class="eyebrow">COȘURI</p>
+                <h2>Coșul săptămânal de legume</h2>
+                <p class="section-subtitle">Alegi mărimea, noi punem ce e mai bun în sezon. Poți pune pe pauză oricând.</p>
+                <div class="pricing-grid">
+                    <article class="price-card">
+                        <h3>Mic</h3>
+                        <p class="price-value">
+                            290 lei
+                            <span>/ săpt.</span>
+                        </p>
+                        <ul>
+                            <li>5 kg de legume</li>
+                            <li>Verdețuri incluse</li>
+                            <li>Pentru 1–2 persoane</li>
+                        </ul>
+                        <a class="btn-outline" href="#contact">Comandă</a>
+                    </article>
+                    <article class="price-card popular">
+                        <span class="popular-tag">CEL MAI CERUT</span>
+                        <h3>Familie</h3>
+                        <p class="price-value">
+                            490 lei
+                            <span>/ săpt.</span>
+                        </p>
+                        <ul>
+                            <li>9 kg legume și fructe</li>
+                            <li>10 ouă de țară</li>
+                            <li>Verdețuri incluse</li>
+                            <li>Livrare gratuită</li>
+                        </ul>
+                        <a class="btn-solid" href="#contact">Comandă</a>
+                    </article>
+                    <article class="price-card">
+                        <h3>Mare</h3>
+                        <p class="price-value">
+                            790 lei
+                            <span>/ săpt.</span>
+                        </p>
+                        <ul>
+                            <li>15 kg legume și fructe</li>
+                            <li>Brânză și ouă</li>
+                            <li>Un borcan de miere</li>
+                        </ul>
+                        <a class="btn-outline" href="#contact">Comandă</a>
+                    </article>
                 </div>
-
-                <!-- Pachet Familie (Cel mai cerut) -->
-                <div class="price-card popular">
-                    <span class="popular-tag">CEL MAI CERUT</span>
-                    <h3>Familie</h3>
-                    <div class="price-value">490 lei <span>/ săpt.</span></div>
-                    <ul class="features-list">
-                        <li>✓ 9 kg legume și fructe</li>
-                        <li>✓ 10 ouă de țară</li>
-                        <li>✓ Verdețuri incluse</li>
-                        <li>✓ Livrare gratuită</li>
-                    </ul>
-                    <a href="#" class="btn-solid">Comandă</a>
+            </section>
+            <section class="subscribe-section">
+                <div>
+                    <h3>Află ce s-a copt la fermă</h3>
+                    <p>În fiecare luni îți scriem ce produse avem în coș.</p>
                 </div>
-
-                <!-- Pachet Mare -->
-                <div class="price-card">
-                    <h3>Mare</h3>
-                    <div class="price-value">790 lei <span>/ săpt.</span></div>
-                    <ul class="features-list">
-                        <li>✓ 15 kg legume și fructe</li>
-                        <li>✓ Brânză și ouă</li>
-                        <li>✓ Un borcan de miere</li>
-                    </ul>
-                    <a href="#" class="btn-solid">Comandă</a>
-                </div>
+                <form action="mailto:comenzi@livadaverde.md" class="subscribe-form" enctype="text/plain" method="post">
+                    <label class="visually-hidden" for="email">Adresa ta de e-mail</label>
+                    <input id="email" name="email" placeholder="Adresa ta de e-mail" required="" type="email"/>
+                    <button type="submit">Abonează-mă</button>
+                </form>
+            </section>
+        </main>
+        <a class="back-to-top" href="#acasa" aria-label="Înapoi sus">↑</a>
+        <footer class="site-footer" id="contact">
+            <a class="footer-logo" href="#acasa">
+                🌿 Livada
+                <span>Verde</span>
+            </a>
+            <p class="footer-description">
+                Fermă ecologică de familie din raionul Sîngerei, cu livrare de legume și fructe în
+                <br/>
+                Bălți.
+            </p>
+            <nav aria-label="Navigare subsol" class="footer-nav">
+                <a href="#acasa">Acasă</a>
+                <a href="#produse">Produse</a>
+                <a href="#cosuri">Coșuri</a>
+                <a href="#ferma">Ferma</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="social-links">
+                <a aria-label="Facebook" href="#contact">f</a>
+                <a aria-label="LinkedIn" href="#contact">in</a>
+                <a aria-label="Instagram" href="#contact">ig</a>
+                <a aria-label="YouTube" href="#contact">yt</a>
             </div>
-        </section>
-
-        <!-- 9. Abonare (Formular) -->
-        <section class="subscribe-section">
-            <h3>Află ce s-a copt la fermă</h3>
-            <p>În fiecare luni îți scriem ce produse avem în coș.</p>
-            <form class="subscribe-form">
-                <input type="email" placeholder="Adresa ta de e-mail" required>
-                <button type="submit">Abonează-mă</button>
-            </form>
-        </section>
-    </main>
-
-    <!-- 10. Footer -->
-    <footer id="contact" class="site-footer">
-        <div class="footer-content">
-            <div class="footer-col">
-                <div class="logo">🌿 LivadaVerde</div>
-                <p>Fermă ecologică de familie din raionul Sîngerei, cu livrare de legume și fructe în Bălți.</p>
-            </div>
-            <div class="footer-col">
-                <h4>Navigare</h4>
-                <ul>
-                    <li><a href="#acasa">Acasă</a></li>
-                    <li><a href="#produse">Produse</a></li>
-                    <li><a href="#cosuri">Coșuri</a></li>
-                    <li><a href="#ferma">Ferma</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Social</h4>
-                <div class="social-links">
-                    <a href="#">f</a>
-                    <a href="#">in</a>
-                    <a href="#">ig</a>
-                    <a href="#">yt</a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2026 Ferma Livada Verde · Făcut cu ❤ de [numele studentului]</p>
-        </div>
-    </footer>
-
-    <!-- 11. Butonul plutitor (chat/sus - fixed) -->
-    <a href="#" class="floating-btn" title="Sus / Chat">💬</a>
-
-</body>
+            <div class="footer-bottom">© 2026 Ferma Livada Verde · Făcut cu ❤️ de Moroz Stanislav</div>
+        </footer>
+    </body>
 </html>
