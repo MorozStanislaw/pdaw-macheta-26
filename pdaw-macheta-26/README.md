@@ -1,3 +1,2 @@
-Nume: Moroz 
-Prenume: Stanislav
+Nume și prenume: Moroz Stanislav
 Grupa: IT11Z
